@@ -64,12 +64,13 @@ namespace DIOBank
             Console.WriteLine("Inserir nova conta.");
             Console.Write("Digite 1 para pessoa física, digite 2 para pessoa jurídica: ");
             int entradaTipoConta = int.Parse(Console.ReadLine());
+            
             Console.Write("Digite o nome do Cliente: ");
-            string entradaNome = Console.ReadLine();
+            string entradaNome = ValidarTextoVazio(Console.ReadLine());
             Console.Write("Digite o saldo inicial: ");
-            double entradaSaldo = double.Parse(Console.ReadLine());
+            double entradaSaldo = double.Parse(ValidarTextoVazio(Console.ReadLine()));
             Console.Write("Digite o credito: ");
-            double entradaCredito = double.Parse(Console.ReadLine());
+            double entradaCredito = double.Parse(ValidarTextoVazio(Console.ReadLine()));
             Conta NovaConta = new Conta(tipoConta:(TipoConta)entradaTipoConta,
                                         nome: entradaNome,
                                         saldo: entradaSaldo, 
@@ -98,28 +99,46 @@ namespace DIOBank
         private static void Sacar()
         {
             Console.WriteLine("Digite o numero da conta.");
-            int indice = int.Parse(Console.ReadLine());
+            int indice = int.Parse(ValidarTextoVazio(Console.ReadLine()));
             Console.WriteLine("Digite o valor a ser sacado");
-            double valor = double.Parse(Console.ReadLine());
+            double valor = double.Parse(ValidarTextoVazio(Console.ReadLine()));
             listaContas[indice].Sacar(valor);
         }
         private static void Depositar()
         {
             Console.WriteLine("Digite o numero da conta.");
-            int indice = int.Parse(Console.ReadLine());
+            int indice = int.Parse(ValidarTextoVazio(Console.ReadLine()));
+            ValidarIndice(indice);
             Console.WriteLine("Digite o valor a ser depositado");
-            double valor = double.Parse(Console.ReadLine());
+            double valor = double.Parse(ValidarTextoVazio(Console.ReadLine()));
             listaContas[indice].Depositar(valor);
         }
         private static void Transferir()
         {
             Console.WriteLine("Digite o numero da conta de origem.");
-            int indice = int.Parse(Console.ReadLine());
+            int indice = int.Parse(ValidarTextoVazio(Console.ReadLine()));
+            ValidarIndice(indice);
             Console.WriteLine("Digite o numero da conta de destino.");
-            int indiceDestino = int.Parse(Console.ReadLine());
+            int indiceDestino = int.Parse(ValidarTextoVazio(Console.ReadLine()));
+            ValidarIndice(indiceDestino);
             Console.WriteLine("Digite o valor a ser transferido");
-            double valor = double.Parse(Console.ReadLine());
+            double valor = double.Parse(ValidarTextoVazio(Console.ReadLine()));
             listaContas[indice].Transferir(valor, listaContas[indiceDestino]);
+        }
+        private static string ValidarTextoVazio(string text)
+        {
+            if(string.IsNullOrEmpty(text))
+            {
+                throw new ArgumentNullException();
+            }
+            return text;
+        }
+        private static void ValidarIndice(int i)
+        {
+            if(i >= listaContas.Count || i < 0)
+            {
+                throw new ArgumentOutOfRangeException("Número da conta inválido.");
+            }
         }
     }
 }

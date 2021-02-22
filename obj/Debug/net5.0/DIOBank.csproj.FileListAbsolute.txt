@@ -1,0 +1,16 @@
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\bin\Debug\net5.0\DIOBank.exe
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\bin\Debug\net5.0\DIOBank.deps.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\bin\Debug\net5.0\DIOBank.runtimeconfig.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\bin\Debug\net5.0\DIOBank.runtimeconfig.dev.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\bin\Debug\net5.0\DIOBank.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\bin\Debug\net5.0\ref\DIOBank.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\bin\Debug\net5.0\DIOBank.pdb
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\DIOBank.csprojAssemblyReference.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\DIOBank.GeneratedMSBuildEditorConfig.editorconfig
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\DIOBank.AssemblyInfoInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\DIOBank.AssemblyInfo.cs
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\DIOBank.csproj.CoreCompileInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\DIOBank.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\ref\DIOBank.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\DIOBank.pdb
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\DIOBank\obj\Debug\net5.0\DIOBank.genruntimeconfig.cache

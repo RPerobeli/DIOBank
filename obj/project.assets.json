@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Meu Drive\\DESENVOLVEDOR\\.NET+C#\\DIOBank\\DIOBank.csproj",
+      "projectUniqueName": "G:\\Meu Drive\\DESENVOLVEDOR\\DIOBank\\DIOBank.csproj",
       "projectName": "DIOBank",
-      "projectPath": "G:\\Meu Drive\\DESENVOLVEDOR\\.NET+C#\\DIOBank\\DIOBank.csproj",
+      "projectPath": "G:\\Meu Drive\\DESENVOLVEDOR\\DIOBank\\DIOBank.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "G:\\Meu Drive\\DESENVOLVEDOR\\.NET+C#\\DIOBank\\obj\\",
+      "outputPath": "G:\\Meu Drive\\DESENVOLVEDOR\\DIOBank\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

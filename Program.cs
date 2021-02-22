@@ -63,8 +63,11 @@ namespace DIOBank
             Console.WriteLine();
             Console.WriteLine("Inserir nova conta.");
             Console.Write("Digite 1 para pessoa física, digite 2 para pessoa jurídica: ");
-            int entradaTipoConta = int.Parse(Console.ReadLine());
-            
+            int entradaTipoConta = int.Parse(ValidarTextoVazio(Console.ReadLine()));
+            if(entradaTipoConta < 1 || entradaTipoConta > 2)
+            {
+                throw new ArgumentOutOfRangeException("Os valores aceitos são apenas 1 ou 2");
+            }
             Console.Write("Digite o nome do Cliente: ");
             string entradaNome = ValidarTextoVazio(Console.ReadLine());
             Console.Write("Digite o saldo inicial: ");
